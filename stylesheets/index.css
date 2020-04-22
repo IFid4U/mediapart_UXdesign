@@ -1,0 +1,192 @@
+body
+{
+    box-sizing: border-box;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.id
+{
+    display: block;
+    position: relative;
+    left: 80%;
+    font-size: 0.8em;
+    font-weight: 120;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    line-height: 135%;
+}
+
+div .cartesmilieu, .cartesmilieudevant, .cartesmilieuderriere, .cartesmilieudevant:hover, .cartesmilieudevant:hover + .cartesmilieuderriere
+{
+    width: 50%;
+    height: inline-block;
+    position: absolute;
+    top: 280px;
+    left: 12.5%;
+    opacity: 1.0;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+    transition: 1s;
+    backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
+}
+
+.cartesmilieudevant
+{
+    z-index: 100;
+    backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
+}
+
+.cartesmilieuderriere
+{
+    border: 0.1px solid #444;
+    z-index: 50;
+    transform: rotateY(-180deg); /* Celui-ci est retourné par défaut */
+    backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
+}
+
+.cartesmilieudevant:hover
+{
+    transform: rotateY(360deg); /* On passe de 0 à 360° : tour complet */
+}
+
+    /*
+    Astuce :
+    Lorsqu'on survole le bloc devant, on applique une rotation au bloc derriere
+    */
+.cartesmilieudevant:hover + .cartesmilieuderriere
+{
+    transform: rotateY(180deg);  /* On passe de -180° à 180° : tour complet */
+}
+
+div .cartesdroite, .cartesdroitedevant, .cartesdroitederriere, .cartesdroitedevant:hover, .cartesdroitedevant:hover + .cartesdroitederriere
+{
+    width: 25%;
+    height: inline-block;
+    position: absolute;
+    top: 280px;
+    right: 7.5%;
+    opacity: 1.0;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+    transition: 1s;
+    backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
+}
+
+.cartesdroitedevant
+{
+    z-index: 100;
+    backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
+}
+
+.cartesdroitederriere
+{
+    border: 0.1px solid #444;
+    z-index: 50;
+    transform: rotateY(-180deg); /* Celui-ci est retourné par défaut */
+    backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
+}
+
+.cartesdroitedevant:hover
+{
+    transform: rotateY(360deg); /* On passe de 0 à 360° : tour complet */
+}
+
+    /*
+    Astuce :
+    Lorsqu'on survole le bloc devant, on applique une rotation au bloc derriere
+    */
+.cartesdroitedevant:hover + .cartesdroitederriere
+{
+    transform: rotateY(180deg);  /* On passe de -180° à 180° : tour complet */
+}
+
+.text-reflect
+{
+    content: '';
+    transform: rotateY(180deg); /* enlever l'effet mirroir du txt de derriere */
+}
+    
+.lettrinemilieuderriere
+{
+    font-size:2em;
+    float : left; 
+}
+
+.lettrinemilieudevant
+{
+    font-size:2em;
+    float: left;
+}
+
+p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    initial-letter: 130%;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+}
+
+h2
+{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+}
+
+h3
+{
+    font-size: 1.35em;
+    font-weight: normal;
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+}
+
+h4
+{
+    font-size: 1.35em;
+    font-weight: normal;
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+}
+
+h5
+{
+    font-size: 1em;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    line-height: 135%;
+}
+
+h6
+{
+    font-size: 1em;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    line-height: 135%;
+}
+
+
+h8
+{
+    font-family:Helvetica, sans-serif; 
+    text-transform: uppercase; 
+    font-size: 0.75em; /*les fonts dédiées au menu uniquement*/
+}

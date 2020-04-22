@@ -1,0 +1,149 @@
+.menuidz100
+{
+    position: absolute;
+    top: 10%;
+    right: 21%;
+    z-index: 100;
+}
+
+.compte
+{
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 130;
+    font-size: 0.95em;
+    color: black;
+    text-align: right;
+}
+
+.sousmenus
+{
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: black;
+}
+
+
+.menuidz100 ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.menuidz100 ul li
+{
+    width: 120 px;
+    margin: 7.5px;
+    padding: 7.5px;
+    top: 235px;
+}
+
+.menuidz100 ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.active, .menuidz100 ul li:hover
+{
+    color: lightgray;
+}
+
+.submenu
+{
+    display: none;
+}
+
+.submenu:hover
+{
+    display: block;
+    background: white;
+    margin-top: 7.5px;
+    margin-left: -7.5px;
+}
+    
+.menuidz100 ul li:hover .submenu
+{
+    display: block;
+    position: relative;
+    background: white;
+    margin-top: 7.5px;
+    margin-left: -7.5px;
+    border: 0.5px solid lightgray;
+    border-bottom: 1px dotted black;
+}
+
+.menuidz100 ul li:hover .submenu ul
+{
+    display: block;
+    margin: 5px;
+}
+
+.sousmenucompte
+{
+    width: 150px;
+    padding: 5px;
+    background: white;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    color: black;
+    line-height: 0.7em;
+    color: black;
+    text-align: left;
+}
+
+.sousmenus
+{
+    width: 150px;
+    padding: 5px;
+    border-top: 1px dotted black;
+    background: white;
+    text-align: left;
+}
+
+.sousmenudelog
+{
+    width: 150px;
+    padding: 5px;
+    border-top: 1px dotted black;
+    background: white;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 130;
+    font-size: 0.95em;
+    line-height: 0.1em;
+    color: black;
+    text-align: left;
+}
+
+
+.detail
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 130;
+    font-size: 0.95em;
+    line-height: 1.1em;
+    color: black;
+    text-align: left;
+    border-bottom: none;
+}
+
+.menuidz100 ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menuidz100 ul li:hover .submenu ul li a:hover
+{
+    color: lightgray;
+}
+
+.compte a:hover
+{
+    color: lightgray;
+}
+

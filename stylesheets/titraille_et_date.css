@@ -1,0 +1,23 @@
+.titraille
+{
+    position: absolute;
+    top: 90px;
+    left: 25%;
+    margin: auto;
+    max-width: 100%;
+}
+
+
+.date
+{
+    position: relative;
+    top: 10px;
+    left: 39%;
+    margin: auto;
+    font-family:Helvetica, sans-serif; 
+    text-transform: uppercase; 
+    font-weight: 130;
+    letter-spacing: .1em;
+    font-size: 0.65em;
+    color: black;
+}
