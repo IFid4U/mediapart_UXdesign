@@ -26,6 +26,5 @@
     </header>
 
     <body>
-        <?php include("machineaecrire.php"); ?> 
     </body>
 </html>
